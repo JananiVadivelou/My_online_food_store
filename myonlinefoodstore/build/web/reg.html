@@ -1,0 +1,34 @@
+<html>
+	<head>
+		<title> Registration page </title>
+	</head>
+<body bgcolor="LIghtBlue"> <br><br>
+  <form name="myform" method="post" action="reg.jsp">
+      <h1 align="center"> <font color="BlueVoilet"> Registration form </font> </h1>
+	<div align="center">
+            <pre> <b>
+                <font size="4" color="Blue"> 
+		NAME            : <input type="text" name="name"><br>
+		ADDRESS         : <input type="text" name="addr"><br>
+		CONTACT NUMBER  : <input type="number" name="no" min=1111111111 max="9999999999"><br>
+		LOGIN ID        : <input type="text" name="id"><br>
+		PASSWORD        : <input type="password" name="pwd">
+                </font> </b>
+		</pre> <br>
+                <p>
+    <input type="radio" name="food" value="VEG"/>  <label for = "VEG">VEG</label>   
+    <input type="radio" name="food" value="NON-VEG"/>  <label for = "NON VEG">NON-VEG</label> 
+    <input type="radio" name="food" value="VEG AND NON VEG"/>  <label for = "VEG AND NON VEG">VEG AND NON-VEG</label> 
+    </p>  
+     <p>       
+     <input type = "radio" name = "mship" id = "free" value = "free" checked = "checked" />   <label for = "free">FREE</label>
+     <input type = "radio" name = "mship" id = "premium" value = "premium" />   <label for = "premium">PREMIUM</label>
+     </p>     
+	</div>
+	<div align="center">
+		<input type="submit" value="ok" onClick="validate()">&nbsp;&nbsp;&nbsp;&nbsp;
+		<input type="reset" value="clear">
+	</div>
+  </form>
+</body>
+</html>
